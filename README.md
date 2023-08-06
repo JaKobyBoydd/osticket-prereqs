@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+<h1>osTicket Installation</h1>
+This tutorial outlines the installation of the open-source help desk ticketing system osTicket.<br />
 
 
 
@@ -17,7 +17,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+<h2>List of Files</h2>
 
 - PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
 - Rewrite Module (rewrite_amd64_en-US.msi)
@@ -39,13 +39,14 @@ checking the CGI box under the "Application and development features" tab. After
 </p>
 <br />
 
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After enabling IIS, you can now download all the necessary files. It must be noted that in regards to the PHP 7.3.8 file, you need to create a PHP folder in the root of the C drive. After creating that folder, download the file, extract all, and unzip it into the PHP folder. When downloading MYSQL, make sure to choose the "Typical" setup and "Standard" Configuration. Once that is done, open IIS as an Admin by typing IIS in the windows search bar and click on PHP Manager. Register new PHP and choose the highlighted file found in the PHP folder on the C drive as shown in the image below.
 </p>
 <br />
+<p>
+<img src="https://i.imgur.com/0CDzdx3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
