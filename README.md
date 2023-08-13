@@ -43,7 +43,7 @@ checking the CGI box under the "Application and development features" tab. After
 
 
 <p>
-After enabling IIS, you can now download all the necessary files. It must be noted that in regards to the PHP 7.3.8 file, you need to create a PHP folder in the root of the C drive. After creating that folder, download the file, extract all, and unzip it into the PHP folder. When downloading MYSQL, make sure to choose the "Typical" setup and "Standard" Configuration. Once that is done, open IIS as an Admin by typing IIS in the windows search bar and click on PHP Manager. Register new PHP and choose the highlighted file found in the PHP folder on the C drive as shown in the image below. Reload IIS and stop/start server.
+After enabling IIS, you can now download all the necessary files. It must be noted that in regards to the PHP 7.3.8 file, you need to create a PHP folder in the root of the C drive. After creating that folder, download the file, extract all, and unzip it into the PHP folder. When downloading MYSQL, make sure to choose the "Typical" setup and "Standard" Configuration. Remember the username and password for MySQL because it will be needed when setting up Heidi SQL. Once that is done, open IIS as an Admin by typing IIS in the windows search bar and click on PHP Manager. Register new PHP and choose the highlighted file found in the PHP folder on the C drive as shown in the image below. Reload IIS and stop/start server.
 </p>
 <br />
 <p>
@@ -57,16 +57,16 @@ Install osTicket v1.15.8 and download osTicket from the Installation Files Folde
 <img src="https://i.imgur.com/JTfggby.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-Disable inheritance on the ost-config.php file by; right clicking the file, going to properties, selecting the security tab, choosing advanced and the disable inheritance option will be available there. Be sure to choose the option that removes all inherited permissions. To add permissions for either everyone or selected persons; click on add in the security tab, select principle and in the box you can add whoever needs permissions.
-
-
-
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Disable inheritance on the ost-config.php file by; right clicking the file, going to properties, selecting the security tab, choosing advanced and the disable inheritance option will be available there. Be sure to choose the option that removes all inherited permissions. To add permissions for either everyone or selected persons; click on add in the security tab, select principle and in the box you can add whoever needs permissions. Continue setting up OsTicket in the browser.
 <br />
+<p>
+The last step is to download and install Heidi SQL. Once that is downloaded, create a new session and use the same username/password chosen for MySQL. Finally, create a new database by; right clicking unnamed, choosing create new and selecting database. *See Image Below*  Name the database and in the OsTicket browser, under MySQL Database, type that same name. Finally, hit install and you're all done!   
+</p>
+
+
+
+
+<p>
+<img src="https://i.imgur.com/u7FTfyB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
