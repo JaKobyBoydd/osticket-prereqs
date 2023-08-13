@@ -52,11 +52,14 @@ After enabling IIS, you can now download all the necessary files. It must be not
 <br />
 
 
-Install osTicket v1.15.8 and download osTicket from the Installation Files Folder. Extract and copy “upload” folder to c:\inetpub\wwwroot and within c:\inetpub\wwwroot, Rename “upload” to “osTicket” Then within IIs, go to "Sites" in the top left corner, Default, osTicket, in the browse tab on the right click, "Browse*:80". Now there are a few extensions that need to be enabled and those extensions are found within PHP manager in IIS. Click on the "enable or disable extensions" link under PHP Extensions and enable the following: (php_imap.dll) (php_intl.dll) (php_opcache.dll) 
-*See Image Below*
+Install osTicket v1.15.8 and download osTicket from the Installation Files Folder. Extract and copy “upload” folder to c:\inetpub\wwwroot and within c:\inetpub\wwwroot, Rename “upload” to “osTicket” Then within IIs, go to "Sites" in the top left corner, Default, osTicket, in the browse tab on the right click, "Browse*:80". Now there are a few extensions that need to be enabled and those extensions are found within PHP manager in IIS. Click on the "enable or disable extensions" link under PHP Extensions and enable the following: (php_imap.dll) (php_intl.dll) (php_opcache.dll) *See Image Below*  After enabling the extensions, the file, "ost-sampleconfig.php" in the include folder, needs to be renamed to, "ost-config.php". This file can be located by going to the following folders:  C:\inetpub\wwwroot\osTicket\include. 
 <p>
 <img src="https://i.imgur.com/JTfggby.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+Disable inheritance on the ost-config.php file by; right clicking the file, going to properties, selecting the security tab, choosing advanced and the disable inheritance option will be available there. Be sure to choose the option that removes all inherited permissions. To add permissions for either everyone or selected persons; click on add in the security tab, select principle and in the box you can add whoever needs permissions.
+
+
 
 
 
